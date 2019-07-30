@@ -1,6 +1,5 @@
 @extends('layout')
 
-
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -12,7 +11,6 @@
             </div>
         </div>
     </div>
-
 
     @if (count($errors) > 0)
         <div class="alert alert-danger">
@@ -29,6 +27,5 @@
     {!! Form::model($article, ['method' => 'PATCH','route' => ['articles.update', $article->id]]) !!}
     @include('articles.form')
     {!! Form::close() !!}
-
 
 @endsection

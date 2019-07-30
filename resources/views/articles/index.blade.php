@@ -1,14 +1,13 @@
 @extends('layout')
 
-
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left" style="margin-bottom: 2%">
                 <h2>Laravel Eloquent Query Filtering</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('articles.create') }}"> Create New Article</a>
+                <a class="btn btn-success" href="{{ route('articles.create') }}"> Add New</a>
             </div>
         </div>
     </div>
