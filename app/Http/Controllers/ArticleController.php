@@ -16,10 +16,7 @@ class ArticleController extends Controller
      */
     public function index(ArticleFilters $filters)
     {
-        $model = 
-        $articles = Article::filter($filters)->get();
-
-        dd($articles);
+        $articles = Article::filter($filters)->paginate(5);
 
        // $articles = Article::latest()->paginate(5);
 
