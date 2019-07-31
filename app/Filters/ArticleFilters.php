@@ -15,9 +15,8 @@ class ArticleFilters extends QueryFilters
      * @internal param $name
      * @internal param string $level
      */
-    public function searchByTitle($title)
+    public function title($title)
     {
-        dd($title); 
         return $this->builder->where('title', 'like', '%' .$title.'%');
     }
 

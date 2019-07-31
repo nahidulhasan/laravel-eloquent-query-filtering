@@ -11,10 +11,11 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Request $request
      * @param ArticleFilters $filters
      * @return \Illuminate\Http\Response
      */
-    public function index(ArticleFilters $filters)
+    public function index(Request $request, ArticleFilters $filters)
     {
         $articles = Article::filter($filters)->paginate(5);
 
