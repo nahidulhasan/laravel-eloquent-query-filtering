@@ -3,17 +3,25 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use App\Filters\ArticleFilters;
+
 
 class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
+     * @param ArticleFilters $filters
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(ArticleFilters $filters)
     {
-        $articles = Article::latest()->paginate(5);
+        $model = 
+        $articles = Article::filter($filters)->get();
+
+        dd($articles);
+
+       // $articles = Article::latest()->paginate(5);
 
         return view('articles.index',compact('articles'))
             ->with('i', (request()->input('page', 1) - 1) * 5);

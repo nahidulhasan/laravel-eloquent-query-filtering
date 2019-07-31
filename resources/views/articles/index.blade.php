@@ -9,8 +9,8 @@
 
 
             <div class="pull-right" style=" display:inline; margin-bottom: 5px" >
-                <form class="form-inline" style="display: inline" action="/search" method="POST" role="search">
-                    {{ csrf_field() }}
+                <form class="form-inline" style="display: inline" action="articles">
+
                     <input type="text" style="width: 230px;" class="form-control" name="q" placeholder="Search">
 
                     <button type="submit" class="btn btn-primary"> Search </button>
