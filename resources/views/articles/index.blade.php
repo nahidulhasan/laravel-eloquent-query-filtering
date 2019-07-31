@@ -6,9 +6,18 @@
             <div class="pull-left" style="margin-bottom: 2%">
                 <h2>Laravel Eloquent Query Filtering</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('articles.create') }}"> Add New</a>
+
+
+            <div class="pull-right" style=" display:inline; margin-bottom: 5px" >
+                <form class="form-inline" style="display: inline" action="/search" method="POST" role="search">
+                    {{ csrf_field() }}
+                    <input type="text" style="width: 230px;" class="form-control" name="q" placeholder="Search">
+
+                    <button type="submit" class="btn btn-primary"> Search </button>
+                </form>
+                <a class="btn btn-success"  href="{{ route('articles.create') }}"> Add New</a>
             </div>
+
         </div>
     </div>
 
