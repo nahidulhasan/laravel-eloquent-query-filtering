@@ -1,5 +1,5 @@
 
-## laravel-eloquent-query-filtering
+## Laravel-eloquent-query-filtering
 
 ## Quick Start
 
@@ -18,5 +18,6 @@
 
 - Run ```php artisan serve```
 
-Now browse using this url ```http://127.0.0.1:8000/articles```
+ Now you can browse using this url 
+```http://127.0.0.1:8000/articles```
 
