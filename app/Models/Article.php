@@ -1,8 +1,8 @@
 <?php
 namespace App\Models;
 
-use App\Traits\Filterable;
 use Illuminate\Database\Eloquent\Model;
+use NahidulHasan\EloquentFilter\Filterable;
 
 class Article extends Model
 {

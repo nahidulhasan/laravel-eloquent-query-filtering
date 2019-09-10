@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "398ca4cfb8dcb96dc3a81a806e3567de",
+    "content-hash": "6c68169ef3b13c44000e3272f2089ff8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -905,6 +905,46 @@
                 "psr-3"
             ],
             "time": "2018-11-05T09:00:11+00:00"
+        },
+        {
+            "name": "nahidulhasan/eloquent-filter",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nahidulhasan/eloquent-filter.git",
+                "reference": "e2c019ae1121ae96c4d0fc49115f6bb606e40742"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nahidulhasan/eloquent-filter/zipball/e2c019ae1121ae96c4d0fc49115f6bb606e40742",
+                "reference": "e2c019ae1121ae96c4d0fc49115f6bb606e40742",
+                "shasum": ""
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NahidulHasan\\EloquentFilter\\EloquentFilterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NahidulHasan\\EloquentFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nahidul Hasan",
+                    "email": "nahidul.cse@gmail.com"
+                }
+            ],
+            "description": "Laravel eloquent query filter",
+            "time": "2019-08-31T16:40:49+00:00"
         },
         {
             "name": "nesbot/carbon",

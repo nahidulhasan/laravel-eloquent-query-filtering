@@ -1,8 +1,8 @@
 <?php
-
 namespace App\Filters;
 
 use Illuminate\Database\Eloquent\Builder;
+use NahidulHasan\EloquentFilter\QueryFilters;
 
 class ArticleFilters extends QueryFilters
 {
